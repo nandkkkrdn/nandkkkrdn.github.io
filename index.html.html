@@ -1,184 +1,179 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Buy Apple Products 2026 | iPhone 17, MacBook, iPad</title>
+    <title>Apple Products 2026 | Official iPhone, MacBook, & iPad Showcase</title>
+    <meta name="description" content="Explore the latest Apple technology for 2026. Discover features of the new iPhone 17, MacBook Neo, and iPad Air. High-performance devices for your modern lifestyle.">
+    <meta name="keywords" content="Apple 2026, iPhone 17, MacBook Neo, iPad Air, Apple products, latest tech">
+    <meta name="author" content="Student Project">
+    <meta name="robots" content="index, follow">
 
-<meta name="description" content="Buy Apple products 2026 including iPhone 17, MacBook Neo and iPad Air. Modern responsive website with SEO optimization.">
-<meta name="keywords" content="Apple, iPhone 17, MacBook Neo, iPad Air, buy Apple products">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Student Project">
-<meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://example.com/">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<link rel="canonical" href="https://yourname.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Apple Products 2026 | iPhone, MacBook, iPad">
+    <meta property="og:description" content="Discover the future of technology with the 2026 Apple product lineup.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Apple Products 2026">
-<meta property="og:description" content="Explore and buy iPhone, MacBook and iPad">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://yourname.netlify.app">
-<meta property="og:image" content="https://yourname.netlify.app/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Apple Products 2026">
+    <meta property="twitter:description" content="Discover the future of technology with the 2026 Apple product lineup.">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --text-color: #1d1d1f;
+            --link-color: #0071e3;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
 
-<!-- Performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preload" as="image" href="iphone.webp">
+        /* NAV - Accessibility fix: ensure enough contrast */
+        nav { background: rgba(29, 29, 31, 0.95); padding: 15px; position: sticky; top: 0; z-index: 100; }
+        nav ul { display: flex; gap: 30px; justify-content: center; list-style: none; }
+        nav a { color: #fff; font-size: 14px; text-decoration: none; font-weight: 400; transition: color 0.3s; }
+        nav a:hover { color: var(--link-color); }
 
-<link rel="icon" href="favicon.ico">
+        /* HERO */
+        .hero { text-align: center; padding: 100px 20px; background: #000; color: #fff; }
+        .hero h1 { font-size: clamp(32px, 5vw, 56px); margin-bottom: 15px; font-weight: 600; }
+        .hero p { font-size: 21px; color: #86868b; }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
+        /* PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:#f5f5f7;
-color:#1d1d1f;
-line-height:1.6;
-}
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.4s ease;
+        }
 
-/* NAV */
-nav{
-background:#1d1d1f;
-padding:12px;
-position:sticky;
-top:0;
-z-index:1000;
-}
-nav ul{
-display:flex;
-gap:20px;
-justify-content:center;
-list-style:none;
-}
-nav a{
-color:#fff;
-text-decoration:none;
-font-size:14px;
-}
-nav a:hover{color:#ccc}
+        .card:hover { transform: translateY(-10px); }
+        .card h2 { font-size: 28px; margin-bottom: 5px; }
+        .card h3 { font-size: 17px; font-weight: 400; margin-bottom: 20px; color: #1d1d1f; }
 
-/* HERO */
-.hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(#000,#111);
-color:#fff;
-}
-.hero h1{font-size:42px}
-.hero p{opacity:0.8}
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
 
-/* PRODUCTS */
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px 20px;
-max-width:1200px;
-margin:auto;
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--link-color);
+            color: #fff;
+            border-radius: 22px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
 
-.card{
-background:#fff;
-border-radius:16px;
-padding:20px;
-text-align:center;
-box-shadow:0 4px 20px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-.card:hover{transform:translateY(-6px)}
+        .btn:hover { background: #005bb5; }
 
-.card img{
-width:100%;
-border-radius:12px;
-margin-top:10px;
-}
+        /* FOOTER */
+        footer {
+            background: #f5f5f7;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 12px;
+            color: #6e6e73;
+            border-top: 1px solid #d2d2d7;
+        }
 
-/* BUTTON */
-.btn{
-display:inline-block;
-margin-top:12px;
-padding:10px 18px;
-background:#0071e3;
-color:#fff;
-border-radius:20px;
-text-decoration:none;
-}
-.btn:hover{background:#005bb5}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-font-size:12px;
-color:#6e6e73;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero h1{font-size:30px}
-}
-</style>
+        /* MOBILE OPTIMIZATION */
+        @media(max-width: 768px) {
+            .products { padding: 20px; }
+            .hero { padding: 60px 20px; }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<nav aria-label="Main Navigation">
-  <ul>
-    <li><a href="#iphone">iPhone</a></li>
-    <li><a href="#mac">Mac</a></li>
-    <li><a href="#ipad">iPad</a></li>
-  </ul>
-</nav>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#iphone">iPhone</a></li>
+            <li><a href="#mac">Mac</a></li>
+            <li><a href="#ipad">iPad</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
+    <section class="hero">
+        <h1>Apple Products 2026</h1>
+        <p>Innovation meets elegance in our newest lineup.</p>
+    </section>
 
-<section class="hero">
-  <h1>Buy Apple Products 2026</h1>
-  <p>iPhone 17, MacBook Neo, iPad Air available now</p>
-</section>
+    <section class="products">
+        <article class="card" id="iphone">
+            <h2>iPhone 17</h2>
+            <h3>The ultimate smartphone experience.</h3>
+            <img src="iphone.jpg" alt="The new iPhone 17 featuring a titanium finish" loading="lazy" width="400" height="300">
+            <a href="/iphone" class="btn" aria-label="Learn more about iPhone 17">Learn More</a>
+        </article>
 
-<section class="products">
+        <article class="card" id="mac">
+            <h2>MacBook Neo</h2>
+            <h3>Power for the next generation.</h3>
+            <img src="macbook.jpg" alt="MacBook Neo with M5 chip and sleek design" loading="lazy" width="400" height="300">
+            <a href="/macbook" class="btn" aria-label="Learn more about MacBook Neo">Learn More</a>
+        </article>
 
-  <article class="card" id="iphone">
-    <h2>iPhone 17</h2>
-    <img src="iphone.webp" alt="Apple iPhone 17 smartphone" loading="lazy">
-    <a href="#iphone" class="btn">View iPhone</a>
-  </article>
-
-  <article class="card" id="mac">
-    <h2>MacBook Neo</h2>
-    <img src="macbook.webp" alt="Apple MacBook Neo laptop" loading="lazy">
-    <a href="#mac" class="btn">View MacBook</a>
-  </article>
-
-  <article class="card" id="ipad">
-    <h2>iPad Air</h2>
-    <img src="ipad.webp" alt="Apple iPad Air tablet" loading="lazy">
-    <a href="#ipad" class="btn">View iPad</a>
-  </article>
-
-</section>
-
+        <article class="card" id="ipad">
+            <h2>iPad Air</h2>
+            <h3>Versatility and performance in one.</h3>
+            <img src="ipad.jpg" alt="iPad Air 2026 model with liquid retina display" loading="lazy" width="400" height="300">
+            <a href="/ipad" class="btn" aria-label="Learn more about iPad Air">Learn More</a>
+        </article>
+    </section>
 </main>
 
 <footer>
-  <p>© 2026 Apple Style Website</p>
+    <div class="footer-content">
+        <p>© 2026 Apple Clone Project. Built for educational purposes.</p>
+    </div>
 </footer>
 
-<!-- STRUCTURED DATA -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Product",
- "name": "iPhone 17",
- "brand": "Apple",
- "description": "Latest Apple smartphone"
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Apple 2026 Showcase",
+  "url": "https://example.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 
