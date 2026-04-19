@@ -4,43 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Apple Products 2026 | iPhone, MacBook, iPad</title>
+<title>Buy Apple Products 2026 | iPhone 17, MacBook, iPad</title>
 
-<meta name="description" content="Apple style responsive website showcasing iPhone, MacBook, and iPad with modern design and SEO optimization.">
-<meta name="keywords" content="Apple, iPhone 17, MacBook, iPad, responsive website, HTML CSS project">
-<meta name="author" content="Student Project">
+<meta name="description" content="Buy Apple products 2026 including iPhone 17, MacBook Neo and iPad Air. Modern responsive website with SEO optimization.">
+<meta name="keywords" content="Apple, iPhone 17, MacBook Neo, iPad Air, buy Apple products">
 <meta name="robots" content="index, follow">
+<meta name="author" content="Student Project">
+<meta name="theme-color" content="#000000">
 
-<link rel="canonical" href="https://example.com/">
-<link rel="icon" href="favicon.ico">
+<link rel="canonical" href="https://yourname.netlify.app">
 
-<meta property="og:title" content="Apple Clone Website">
-<meta property="og:description" content="Modern Apple-style responsive website">
+<!-- Open Graph -->
+<meta property="og:title" content="Apple Products 2026">
+<meta property="og:description" content="Explore and buy iPhone, MacBook and iPad">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://yourname.netlify.app">
+<meta property="og:image" content="https://yourname.netlify.app/preview.jpg">
 
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preload" as="image" href="iphone.webp">
+
+<link rel="icon" href="favicon.ico">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.5}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:#f5f5f7;
+color:#1d1d1f;
+line-height:1.6;
+}
 
 /* NAV */
-nav{background:#1d1d1f;padding:12px;position:sticky;top:0}
-nav ul{display:flex;gap:20px;justify-content:center;list-style:none}
-nav a{color:#fff;font-size:14px}
+nav{
+background:#1d1d1f;
+padding:12px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+nav ul{
+display:flex;
+gap:20px;
+justify-content:center;
+list-style:none;
+}
+nav a{
+color:#fff;
+text-decoration:none;
+font-size:14px;
+}
 nav a:hover{color:#ccc}
 
 /* HERO */
-.hero{text-align:center;padding:60px 20px;background:#000;color:#fff}
-.hero h1{font-size:42px;margin-bottom:10px}
-.hero p{font-size:18px}
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(#000,#111);
+color:#fff;
+}
+.hero h1{font-size:42px}
+.hero p{opacity:0.8}
 
 /* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-padding:20px;
+padding:40px 20px;
+max-width:1200px;
+margin:auto;
 }
 
 .card{
@@ -51,31 +89,28 @@ text-align:center;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 transition:0.3s;
 }
-
-.card:hover{transform:scale(1.03)}
+.card:hover{transform:translateY(-6px)}
 
 .card img{
 width:100%;
-height:auto;
 border-radius:12px;
 margin-top:10px;
 }
 
+/* BUTTON */
 .btn{
 display:inline-block;
-margin-top:10px;
+margin-top:12px;
 padding:10px 18px;
 background:#0071e3;
 color:#fff;
 border-radius:20px;
 text-decoration:none;
 }
-
 .btn:hover{background:#005bb5}
 
 /* FOOTER */
 footer{
-background:#f5f5f7;
 text-align:center;
 padding:20px;
 font-size:12px;
@@ -104,31 +139,28 @@ color:#6e6e73;
 <main>
 
 <section class="hero">
-  <h1>Apple Products 2026</h1>
-  <p>Discover iPhone, MacBook, and iPad lineup</p>
+  <h1>Buy Apple Products 2026</h1>
+  <p>iPhone 17, MacBook Neo, iPad Air available now</p>
 </section>
 
 <section class="products">
 
   <article class="card" id="iphone">
     <h2>iPhone 17</h2>
-    <h3>Latest smartphone</h3>
-    <img src="iphone.jpg" alt="iPhone 17 smartphone by Apple" loading="lazy" width="400" height="300">
-    <a href="#" class="btn">Learn More</a>
+    <img src="iphone.webp" alt="Apple iPhone 17 smartphone" loading="lazy">
+    <a href="#iphone" class="btn">View iPhone</a>
   </article>
 
   <article class="card" id="mac">
     <h2>MacBook Neo</h2>
-    <h3>Powerful laptop</h3>
-    <img src="macbook.jpg" alt="MacBook laptop Apple device" loading="lazy" width="400" height="300">
-    <a href="#" class="btn">Learn More</a>
+    <img src="macbook.webp" alt="Apple MacBook Neo laptop" loading="lazy">
+    <a href="#mac" class="btn">View MacBook</a>
   </article>
 
   <article class="card" id="ipad">
     <h2>iPad Air</h2>
-    <h3>Portable tablet</h3>
-    <img src="ipad.jpg" alt="iPad Air tablet Apple device" loading="lazy" width="400" height="300">
-    <a href="#" class="btn">Learn More</a>
+    <img src="ipad.webp" alt="Apple iPad Air tablet" loading="lazy">
+    <a href="#ipad" class="btn">View iPad</a>
   </article>
 
 </section>
@@ -136,16 +168,17 @@ color:#6e6e73;
 </main>
 
 <footer>
-  <p>© 2026 Apple Style Website. All rights reserved.</p>
+  <p>© 2026 Apple Style Website</p>
 </footer>
 
+<!-- STRUCTURED DATA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Apple Clone Project",
- "url": "https://example.com",
- "logo": "https://example.com/logo.png"
+ "@type": "Product",
+ "name": "iPhone 17",
+ "brand": "Apple",
+ "description": "Latest Apple smartphone"
 }
 </script>
 
