@@ -2,203 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Apple Products 2026 | iPhone 17, MacBook Neo & iPad Air Showcase</title>
-    <meta name="description" content="Discover the 2026 Apple lineup including iPhone 17, MacBook Neo with M5 chip, and the new iPad Air. Explore cutting-edge technology and innovation.">
-    <meta name="keywords" content="Apple 2026, iPhone 17, MacBook Neo, iPad Air, M5 Chip, Apple Showcase">
+    <title>Apple Products 2026 | Future of iPhone, Mac & iPad</title>
+    <meta name="description" content="Discover the 2026 Apple lineup. High-performance iPhone 17, MacBook Neo with M5 chip, and versatile iPad Air. Built for next-gen innovation.">
+    <meta name="keywords" content="Apple 2026, iPhone 17, MacBook Neo, iPad Air, M5 Chip">
+    <meta name="author" content="Apple Clone Project">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#f5f5f7">
     <link rel="canonical" href="https://example.com/">
 
-    <meta property="og:title" content="Apple Products 2026 | Official Showcase">
-    <meta property="og:description" content="Explore the next generation of Apple innovation including iPhone 17 and MacBook Neo.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1510878933023-e2e2e3942fb0?q=80&w=1200&auto=format&fit=crop">
+    <link rel="preconnect" href="https://images.unsplash.com">
 
     <style>
         :root {
             --bg-color: #f5f5f7;
             --text-color: #1d1d1f;
-            --link-color: #0066cc; /* Өнгөний ялгарал сайжруулсан */
-            --nav-bg: #1d1d1f;
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        
-        body {
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6; /* Уншихад хялбар байдал */
-            -webkit-font-smoothing: antialiased;
+            --link-color: #0066cc;
+            --nav-bg: rgba(29, 29, 31, 0.98);
         }
 
-        /* Navigation */
-        .main-nav { 
+        /* Skip to Content - Accessibility-д маш чухал */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--link-color);
+            color: white;
+            padding: 8px;
+            z-index: 1001;
+            text-decoration: none;
+        }
+        .skip-link:focus { top: 0; }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-display: swap; /* Performance point */
+        }
+
+        nav { 
             background: var(--nav-bg); 
             padding: 1rem; 
             position: sticky; 
             top: 0; 
-            z-index: 1000;
+            z-index: 100;
+            backdrop-filter: blur(15px);
         }
-        .main-nav ul { display: flex; gap: 2rem; justify-content: center; list-style: none; }
-        .main-nav a { color: #f5f5f7; text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 0.5rem; transition: color 0.2s; }
-        .main-nav a:hover, .main-nav a:focus { color: #40a9ff; outline: 2px solid #40a9ff; outline-offset: 4px; }
+        nav ul { display: flex; gap: 2rem; justify-content: center; list-style: none; }
+        nav a { color: #f5f5f7; text-decoration: none; font-size: 0.9rem; font-weight: 400; padding: 8px; border-radius: 4px; }
+        
+        /* Focus State - Accessibility-д заавал байх ёстой */
+        nav a:focus, .cta-button:focus {
+            outline: 2px solid var(--link-color);
+            outline-offset: 4px;
+        }
 
-        /* Hero */
-        .hero { text-align: center; padding: 120px 20px; background: #000; color: #fff; }
-        .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; line-height: 1.1; }
-        .hero p { font-size: 1.3rem; color: #a1a1a6; max-width: 700px; margin: 0 auto; }
+        .hero { text-align: center; padding: clamp(60px, 10vh, 120px) 20px; background: #000; color: #fff; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; letter-spacing: -0.02em; }
+        .hero p { font-size: 1.3rem; color: #86868b; max-width: 700px; margin: 0 auto; }
 
-        /* Grid */
-        .products-container {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2.5rem;
             padding: 80px 5%;
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        .product-card {
-            background: #ffffff;
+        .card {
+            background: #fff;
             border-radius: 20px;
             padding: 40px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
         }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .tagline { color: #6e6e73; display: block; margin-bottom: 1.5rem; min-height: 3em; }
 
-        .product-card:hover { transform: translateY(-8px); }
-        .product-card h2 { font-size: 2rem; margin-bottom: 0.5rem; color: #000; }
-        .product-tagline { color: #6e6e73; font-size: 1.1rem; margin-bottom: 1.5rem; display: block; flex-grow: 1; }
-
-        .product-card img {
+        .card img {
             width: 100%;
             height: auto;
-            border-radius: 12px;
-            margin-bottom: 1.5rem;
-            background: #fafafa;
+            aspect-ratio: 4/3;
             object-fit: cover;
-            aspect-ratio: 4/3; /* Зургуудын хэмжээг ижил байлгах */
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            background: #f5f5f7;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 12px 30px;
             background: var(--link-color);
             color: #fff;
-            border-radius: 30px;
+            border-radius: 25px;
             text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s;
-            margin-top: auto;
+            font-weight: 500;
         }
-
-        .cta-button:hover { opacity: 0.9; }
 
         footer {
-            background: #fff;
-            text-align: center;
             padding: 60px 20px;
-            color: #6e6e73;
-            font-size: 0.85rem;
+            text-align: center;
             border-top: 1px solid #d2d2d7;
+            background: #fff;
+            font-size: 0.8rem;
+            color: #6e6e73;
         }
 
-        @media(max-width: 768px) {
-            .hero { padding: 80px 20px; }
-            .products-container { padding: 40px 20px; }
+        @media (max-width: 600px) {
+            .products-grid { padding: 40px 20px; }
+            .hero h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header>
-    <nav class="main-nav" aria-label="Primary Navigation">
-        <ul>
-            <li><a href="#iphone">iPhone</a></li>
-            <li><a href="#mac">Mac</a></li>
-            <li><a href="#ipad">iPad</a></li>
-        </ul>
-    </nav>
-</header>
+    <header role="banner">
+        <nav aria-label="Main menu">
+            <ul>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section class="hero">
-        <h1>Experience the Future: Apple 2026</h1>
-        <p>Introducing our most powerful lineup ever, powered by the revolutionary M5 chip.</p>
-    </section>
+    <main id="main-content">
+        <section class="hero">
+            <h1>Apple Products 2026</h1>
+            <p>Future-ready technology powered by the all-new M5 architecture.</p>
+        </section>
 
-    <div class="products-container">
-        <article class="product-card" id="iphone">
-            <div>
+        <div class="products-grid">
+            <article class="card" id="iphone">
                 <h2>iPhone 17</h2>
-                <span class="product-tagline">Titanium. Intelligence. Performance.</span>
-                <img src="https://images.unsplash.com/photo-1664478546384-d2b0f08e826f?q=80&w=400&auto=format&fit=crop" 
-                     alt="Concept of the new iPhone 17 Pro with a seamless titanium finish" 
-                     width="400" 
-                     height="300" 
-                     loading="lazy">
-            </div>
-            <a href="/iphone" class="cta-button" aria-label="Learn more about iPhone 17 specifications">Learn More</a>
-        </article>
+                <span class="tagline">The most powerful iPhone yet with Titanium finish.</span>
+                <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&w=400&q=80" 
+                     alt="iPhone 17 concept showcasing ultra-slim bezels" 
+                     width="400" height="300" loading="lazy">
+                <a href="/iphone" class="cta-button" aria-label="Explore iPhone 17 features">Learn More</a>
+            </article>
 
-        <article class="product-card" id="mac">
-            <div>
+            <article class="card" id="mac">
                 <h2>MacBook Neo</h2>
-                <span class="product-tagline">Redefining professional power.</span>
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=400&auto=format&fit=crop" 
-                     alt="Concept of MacBook Neo with an ultra-slim design" 
-                     width="400" 
-                     height="300" 
-                     loading="lazy">
-            </div>
-            <a href="/macbook" class="cta-button" aria-label="Learn more about MacBook Neo performance">Learn More</a>
-        </article>
+                <span class="tagline">Next-generation performance for professionals.</span>
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" 
+                     alt="MacBook Neo with 2026 M5 chip technology" 
+                     width="400" height="300" loading="lazy">
+                <a href="/macbook" class="cta-button" aria-label="Explore MacBook Neo specs">Learn More</a>
+            </article>
 
-        <article class="product-card" id="ipad">
-            <div>
+            <article class="card" id="ipad">
                 <h2>iPad Air</h2>
-                <span class="product-tagline">Light on weight, heavy on power.</span>
-                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=400&auto=format&fit=crop" 
-                     alt="New iPad Air display showing vibrant colors" 
-                     width="400" 
-                     height="300" 
-                     loading="lazy">
-            </div>
-            <a href="/ipad" class="cta-button" aria-label="Learn more about iPad Air 2026 features">Learn More</a>
-        </article>
-    </div>
-</main>
+                <span class="tagline">Thin. Light. Powerful. The perfect balance.</span>
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=400&q=80" 
+                     alt="iPad Air 2026 with Liquid Retina XDR display" 
+                     width="400" height="300" loading="lazy">
+                <a href="/ipad" class="cta-button" aria-label="Explore iPad Air innovation">Learn More</a>
+            </article>
+        </div>
+    </main>
 
-<footer>
-    <p>© 2026 Apple Student Project. For educational purposes only. Apple is a trademark of Apple Inc.</p>
-</footer>
+    <footer role="contentinfo">
+        <p>© 2026 Future Tech Project. Not affiliated with Apple Inc. All rights reserved.</p>
+    </footer>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Apple Products 2026 Showcase",
-  "description": "Educational showcase of future Apple products including iPhone 17 and M5 MacBook Neo.",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "iPhone 17" },
-      { "@type": "ListItem", "position": 2, "name": "MacBook Neo" },
-      { "@type": "ListItem", "position": 3, "name": "iPad Air" }
-    ]
-  }
-}
-</script>
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Apple Products 2026 Showcase",
+      "description": "The latest Apple products featuring iPhone 17 and M5 MacBook Neo.",
+      "brand": { "@type": "Brand", "name": "Apple" }
+    }
+    </script>
 </body>
 </html>
