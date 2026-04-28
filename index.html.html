@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Apple Products 2026 | Future of Innovation</title>
+    <title>Apple Products 2026 | Future Tech Showcase</title>
     
-    <meta name="description" content="Discover the official 2026 Apple lineup. Featuring the all-new iPhone 17 with Titanium finish, MacBook Neo with M5 chip, and the latest redesigned iPad Air.">
+    <meta name="description" content="Discover the official 2026 Apple lineup. Explore the new iPhone 17 with Titanium finish, MacBook Neo with M5 chip, and the latest redesigned iPad Air models.">
     
-    <meta name="keywords" content="Apple 2026, iPhone 17, MacBook Neo, M5 chip, iPad Air">
+    <meta name="keywords" content="Apple 2026, iPhone 17 Pro, MacBook Neo, M5 chip, iPad Air 2026, future technology">
+    <meta name="author" content="Apple Clone Project">
     <link rel="canonical" href="https://nandkkkrdn.github.io/">
 
     <style>
         :root { --bg: #f5f5f7; --text: #1d1d1f; --blue: #0066cc; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
         nav { background: #000; padding: 15px; position: sticky; top: 0; z-index: 100; }
         nav ul { display: flex; gap: 25px; justify-content: center; list-style: none; }
-        nav a { color: #fff; text-decoration: none; font-size: 0.9rem; padding: 10px; }
+        nav a { color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 400; }
         
-        .hero { text-align: center; padding: 80px 20px; background: #000; color: #fff; }
-        /* Зөвхөн ганц H1 ашиглах */
-        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero { text-align: center; padding: 100px 20px; background: #000; color: #fff; }
+        h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 15px; }
+        .hero p { font-size: 1.4rem; color: #86868b; max-width: 700px; margin: 0 auto; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 60px 5%; max-width: 1300px; margin: 0 auto; }
+        .card { background: #fff; border-radius: 24px; padding: 40px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        h2 { font-size: 2rem; margin-bottom: 15px; }
+        h3 { font-size: 1.1rem; color: var(--blue); margin-bottom: 10px; font-weight: 500; }
+        p { color: #424245; margin-bottom: 20px; font-size: 1rem; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 5%; max-width: 1200px; margin: 0 auto; }
-        .card { background: #fff; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        /* Бусад нь H2 */
-        h2 { font-size: 1.8rem; margin-bottom: 15px; }
-        img { width: 100%; border-radius: 10px; margin-bottom: 20px; aspect-ratio: 16/9; object-fit: cover; }
+        img { width: 100%; border-radius: 15px; margin-bottom: 25px; aspect-ratio: 16/9; object-fit: cover; }
+        .btn { display: inline-block; padding: 12px 30px; background: var(--blue); color: #fff; border-radius: 25px; text-decoration: none; font-weight: 500; }
         
-        .btn { display: inline-block; padding: 12px 25px; background: var(--blue); color: #fff; border-radius: 25px; text-decoration: none; }
-        footer { padding: 40px; text-align: center; border-top: 1px solid #ddd; font-size: 0.8rem; }
+        footer { padding: 60px; text-align: center; border-top: 1px solid #d2d2d7; font-size: 0.9rem; color: #86868b; }
     </style>
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#iphone">iPhone</a></li>
                 <li><a href="#mac">Mac</a></li>
@@ -48,35 +51,39 @@
     <main id="main-content">
         <section class="hero">
             <h1>Apple Products 2026</h1>
-            <p>Experience the next generation of power.</p>
+            <p>Experience the next generation of mobile innovation and desktop performance.</p>
         </section>
 
         <div class="grid">
             <article class="card" id="iphone">
+                <h3>Smartphone Excellence</h3>
                 <h2>iPhone 17</h2>
-                <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?w=600" alt="iPhone 17">
-                <p style="margin-bottom: 20px;">Grade 5 Titanium design with M5 power.</p>
-                <a href="https://www.apple.com/iphone" class="btn">Learn More</a>
+                <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?w=600" alt="iPhone 17 with Titanium finish">
+                <p>The new iPhone 17 features a Grade 5 Titanium design, making it the strongest and lightest iPhone yet. Powered by the all-new M5 chip, it delivers 40% faster performance and an all-day battery life for professionals.</p>
+                <a href="https://www.apple.com/iphone" class="btn">View Details</a>
             </article>
 
             <article class="card" id="mac">
+                <h3>Professional Performance</h3>
                 <h2>MacBook Neo</h2>
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600" alt="MacBook Neo">
-                <p style="margin-bottom: 20px;">The most powerful pro laptop ever.</p>
-                <a href="https://www.apple.com/mac" class="btn">Learn More</a>
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600" alt="MacBook Neo with M5 chip">
+                <p>MacBook Neo is the ultimate creative tool. It features a stunning Liquid Retina XDR display and is supercharged by the Apple M5 Ultra chip. Designed for 8K video editing, complex 3D rendering, and professional software development.</p>
+                <a href="https://www.apple.com/mac" class="btn">View Details</a>
             </article>
 
             <article class="card" id="ipad">
+                <h3>Portable Power</h3>
                 <h2>iPad Air</h2>
-                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600" alt="iPad Air">
-                <p style="margin-bottom: 20px;">Portable power for everyday tasks.</p>
-                <a href="https://www.apple.com/ipad" class="btn">Learn More</a>
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600" alt="iPad Air 2026 Model">
+                <p>The 2026 iPad Air combines an impossibly thin design with incredible performance. With the new 12.9-inch display option and M5 efficiency, it's the perfect balance of power and portability for students and artists.</p>
+                <a href="https://www.apple.com/ipad" class="btn">View Details</a>
             </article>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Future Tech Project. Built for education.</p>
+        <p>&copy; 2026 Apple Showcase Project. All rights reserved. Not affiliated with Apple Inc.</p>
+        <p style="margin-top: 10px;">Check out our <a href="https://www.apple.com/privacy/" style="color: #0066cc;">Privacy Policy</a> for more information.</p>
     </footer>
 
 </body>
